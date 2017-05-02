@@ -70,22 +70,65 @@
   </div><!-- /.container-fluid -->
 
 
-<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-    	  <div class="modal-dialog">
-				<div class="loginmodal-container">
-					<h1>Inloggen</h1><br>
-				  <form>
-					<input type="text" name="user" placeholder="E-mail">
-					<input type="password" name="pass" placeholder="Wachtwoord">
-					<input type="submit" name="login" class="login loginmodal-submit" value="Login">
-				  </form>
-					
-				  <div class="login-help">
-					<a href="#">Registeren</a> - <a href="#">Wachtwoord vergeten</a>
-				  </div>
-				</div>
-			</div>
-		  </div>
+						<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+								  <div class="modal-dialog">
+										<div class="loginmodal-container">
+											<h1>Inloggen</h1><br>
+										  <form>
+											<input type="text" name="user" placeholder="E-mail">
+											<input type="password" name="pass" placeholder="Wachtwoord">
+											<input type="submit" name="login" class="login loginmodal-submit" value="Login">
+										  </form>
+											
+										  <div class="login-help">
+											<a href="#">Registeren</a> - <a href="#" data-target="#pwdModal" data-toggle="modal">Wachtwoord vergeten</a>
+										  </div>
+										</div>
+									</div>
+					    </div>
+		  
+													  
+													
+													
+													
+													
+													
+														<!--modal-->
+														<div id="pwdModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+														  <div class="modal-dialog">
+														  <div class="modal-content">
+															  <div class="modal-header">
+																  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+																  <h1 class="text-center">Wat is mijn wachtwoord?</h1>
+															  </div>
+															  <div class="modal-body">
+																  <div class="col-md-12">
+																		<div class="panel panel-default">
+																			<div class="panel-body">
+																				<div class="text-center">
+																				  
+																				  <p>Vul uw e-mailadres in om uw wachtwoord te achterhalen!</p>
+																					<div class="panel-body">
+																						<fieldset>
+																							<div class="form-group">
+																								<input class="form-control input-lg" placeholder="E-mailadres" name="email" type="email">
+																							</div>
+																							<input class="btn btn-lg btn-primary btn-block" value="Verstuur mijn wachtwoord!" type="submit">
+																						</fieldset>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+															  </div>
+															  <div class="modal-footer">
+																  <div class="col-md-12">
+																  <button class="btn" data-dismiss="modal" aria-hidden="true">Annuleren</button>
+																  </div>	
+															  </div>
+														  </div>
+														  </div>
+														</div>
   
   </nav>
 	
