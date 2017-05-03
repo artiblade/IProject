@@ -84,21 +84,21 @@ body {
 .with-nav-tabs.panel-info .nav-tabs > li > a,
 .with-nav-tabs.panel-info .nav-tabs > li > a:hover,
 .with-nav-tabs.panel-info .nav-tabs > li > a:focus {
-    color: #31708f;
+    color: #ffffff;
 }
 .with-nav-tabs.panel-info .nav-tabs > .open > a,
 .with-nav-tabs.panel-info .nav-tabs > .open > a:hover,
 .with-nav-tabs.panel-info .nav-tabs > .open > a:focus,
 .with-nav-tabs.panel-info .nav-tabs > li > a:hover,
 .with-nav-tabs.panel-info .nav-tabs > li > a:focus {
-	color: #31708f;
+	color: #000000;
 	background-color: #bce8f1;
 	border-color: transparent;
 }
 .with-nav-tabs.panel-info .nav-tabs > li.active > a,
 .with-nav-tabs.panel-info .nav-tabs > li.active > a:hover,
 .with-nav-tabs.panel-info .nav-tabs > li.active > a:focus {
-	color: #004b8d;
+	color: #000000;
 	background-color: #fff;
 	border-color: #bce8f1;
 	border-bottom-color: transparent;
@@ -119,29 +119,6 @@ body {
 .with-nav-tabs.panel-info .nav-tabs > li.dropdown .dropdown-menu > .active > a:focus {
     color: #fff;
     background-color: #31708f;
-}
-
-/********************************************************************/
-/*** Progress Bar ***/
-.progress {
-    position: relative;
-    height: 25px;
-}
-
-.progress > .progress-type {
-	position: absolute;
-	left: 0px;
-	font-weight: 800;
-	padding: 3px 30px 2px 10px;
-	color: rgb(255, 255, 255);
-	background-color: rgba(25, 25, 25, 0.2);
-}
-
-.progress > .progress-completed {
-	position: absolute;
-	right: 0px;
-	font-weight: 800;
-	padding: 3px 10px 2px;
 }
 
 /********************************************************************/
@@ -439,8 +416,70 @@ img {
 
 
 
+#catlist{
+    border:1px;
+    border-bottom:none;
+    width:640px;
+}
+#catlist dl{
+    width:640px;
+    margin:0 auto;
+    border-bottom:1px;
+    padding:10px;
+    overflow:hidden;
+    background:#ffffff;
+}
+#catlist dd{overflow:auto}
+#catlist dt strong{
+    float:right;
+    padding:0 0 0 20px;
+}
+#catlist dt img{
+    float:left;
+    margin:0 10px 0 0;
+    border:1px solid #000;
+}
 
+.user_name{
+    font-size:14px;
+    font-weight: bold;
+}
+.comments-list .media{
+    border-bottom: 1px dotted #ccc;
+}
+.post-comments {
+    padding-bottom: 9px;
+    margin: 5px 0 5px;
+}
 
+.comments-nav {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 5px;
+}
+
+.post-comments .comment-meta {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 5px;
+}
+
+.post-comments .media {
+    border-left: 1px dotted #000;
+    border-bottom: 1px dotted #000;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+.post-comments .media-heading {
+    font-size: 12px;
+    color: grey;
+}
+
+.post-comments .comment-meta a {
+    font-size: 12px;
+    color: grey;
+    font-weight: bolder;
+    margin-right: 5px;
+}
 
 
 
