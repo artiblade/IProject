@@ -22,7 +22,8 @@
     <link href="css/main_style.css" rel="stylesheet">
 
 	<!-- CSS van Bootstrap select-->
-	<link href="css/datepicker.css" rel="stylesheet">
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css" />-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -86,146 +87,225 @@
 	  </div><!-- /.container-fluid -->
 	</nav>
 
-	<form class="form-horizontal">
-<fieldset>
+	<form class="form-horizontal" id="registrationForm">
+	<fieldset>
 
-<!-- Form Name -->
-<legend>Registreren</legend>
+	<!-- Form Name -->
+	<legend>Registreren</legend>
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="firstname">Voornaam</label>  
-  <div class="col-md-4">
-  <input id="firstname" name="firstname" type="text" placeholder="Voornaam" class="form-control input-md" required>
-    
-  </div>
-</div>
+	<!-- Text input-->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="firstname">Voornaam</label>  
+	  <div class="col-md-4">
+	  <input id="firstname" name="firstname" type="text" placeholder="Voornaam" class="form-control input-md" required>
+		
+	  </div>
+	</div>
+	
+	
+	
+	
+	
+	
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="lastname">Achternaam</label>  
-  <div class="col-md-4">
-  <input id="lastname" name="lastname" type="text" placeholder="Achternaam" class="form-control input-md" required>
-    
-  </div>
-</div>
+	<!-- Text input-->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="lastname">Achternaam</label>  
+	  <div class="col-md-4">
+	  <input id="lastname" name="lastname" type="text" placeholder="Achternaam" class="form-control input-md" required>
+		
+	  </div>
+	</div>
+	
+	
+	
+	
+	
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="birthdate">Geboortedatum</label>  
-  <div class="col-md-4">
-  <input id="birthdate" name="birthdate" type="text" placeholder="Geboortedatum" class="form-control input-md" required>
-    
-  </div>
-</div>
+	<!-- Text input-->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="birthDate">Geboortedatum</label>  
+	  <div class="col-md-4">
+	  <input id="birthDate" name="birthDate" type="text" placeholder="Geboortedatum" class="form-control input-md" required>
+		
+	  </div>
+	</div>
+	
+	
+	
+	
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="email">Email</label>  
-  <div class="col-md-4">
-  <input id="email" name="email" type="text" placeholder="Email" class="form-control input-md" required>
-    
-  </div>
-</div>
+	<!-- Text input-->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="email">Email</label>  
+	  <div class="col-md-4">
+	  <input id="email" name="email" type="email" placeholder="Email" class="form-control input-md" required>
+		
+	  </div>
+	</div>
+	
+	<!--Text input-->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="tel">Telefoonnummer</label>  
+	  <div class="col-md-4">
+	  <input id="tel" name="tel" type="tel" placeholder="Uw telefoonnummer" class="form-control input-md" required>
+		
+	  </div>
+	</div>
 
-<!-- Select Basic -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="country">Land</label>
-  <div class="col-md-4">
-    <select id="country" name="country" class="form-control input-md">
-      <option>Nederland</option>
-      <option>België</option>
-	  <option>Luxemburg</option>
-	  <option>Duitsland</option>
-    </select>
-  </div>
-</div>
+	
+	
+	
+	
+	
+	<!-- Select Basic -->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="country">Land</label>
+	  <div class="col-md-4">
+		<select id="country" name="country" class="form-control input-md">
+		  <option disabled selected value>Selecteer een optie</option>
+		  <option>Nederland</option>
+		  <option>België</option>
+		  <option>Luxemburg</option>
+		  <option>Duitsland</option>
+		</select>
+	  </div>
+	</div>
+	
+	
+	
+	
+	
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="placename">Plaatsnaam</label>  
-  <div class="col-md-4">
-  <input id="placename" name="placename" type="text" placeholder="Plaatsnaam" class="form-control input-md" required>
-    
-  </div>
-</div>
+	<!-- Text input-->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="placename">Plaatsnaam</label>  
+	  <div class="col-md-4">
+	  <input id="placename" name="placename" type="text" placeholder="Plaatsnaam" class="form-control input-md" required>
+		
+	  </div>
+	</div>
+	
+	
+	
+	
+	
+	
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="zipcode">Postcode</label>  
-  <div class="col-md-4">
-  <input id="zipcode" name="zipcode" type="text" placeholder="Postcode" class="form-control input-md" required>
-    
-  </div>
-</div>
+	<!-- Text input-->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="zipcode">Postcode</label>  
+	  <div class="col-md-4">
+	  <input id="zipcode" name="zipcode" type="text" placeholder="Postcode" class="form-control input-md" required>
+		
+	  </div>
+	</div>
+	
+	
+	
+	
+	
+	
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="address1">Adres 1</label>  
-  <div class="col-md-4">
-  <input id="address1" name="address1" type="text" placeholder="Adres 1" class="form-control input-md" required>
-    
-  </div>
-</div>
+	<!-- Text input-->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="address1">Adres 1</label>  
+	  <div class="col-md-4">
+	  <input id="address1" name="address1" type="text" placeholder="Adres 1" class="form-control input-md" required>
+		
+	  </div>
+	</div>
+	
+	
+	
+	
+	
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="address2">Adres 2 <small>optioneel</small></label>  
-  <div class="col-md-4">
-  <input id="address2" name="address2" type="text" placeholder="Adres 2" class="form-control input-md">
-    
-  </div>
-</div>
+	<!-- Text input-->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="address2">Adres 2 <small>optioneel</small></label>  
+	  <div class="col-md-4">
+	  <input id="address2" name="address2" type="text" placeholder="Adres 2" class="form-control input-md">
+		
+	  </div>
+	</div>
+	
+	
+	
+	
+	
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="username">Gebruikersnaam</label>  
-  <div class="col-md-4">
-  <input id="username" name="username" type="text" placeholder="Gebruikersnaam" class="form-control input-md" required>
-    
-  </div>
-</div>
+	<!-- Text input-->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="username">Gebruikersnaam</label>  
+	  <div class="col-md-4">
+	  <input id="username" name="username" type="text" placeholder="Gebruikersnaam" class="form-control input-md" required>
+		
+	  </div>
+	</div>
+	
+	
+	
+	
+	
 
-<div class="form-group">
-  <label class="col-md-4 control-label" for="password">Wachtwoord</label>
-  <div class="col-md-4">
-  <input id="password" name="password" type="password" placeholder="Wachtwoord" class="form-control input-md">
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="password">Wachtwoord</label>
+	  <div class="col-md-4">
+	  <input id="password" name="password" type="password" placeholder="Wachtwoord" class="form-control input-md">
 
-  </div>
-</div>
+	  </div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
 
-<div class="form-group">
-	<label class="col-md-4 control-label" for="confirm_password">Herhaal wachtwoord</label>
+	<div class="form-group">
+		<label class="col-md-4 control-label" for="confirmpassword">Herhaal wachtwoord</label>
 		<div class="col-md-4">
-	<input  id="confirmpassword" name="confirmpassword" type="password" placeholder="Herhaal wachtwoord" class="form-control input-md">
-
+			<input  id="confirmpassword" name="confirmpassword" type="password" placeholder="Herhaal wachtwoord" class="form-control input-md">
 		</div>
 	</div>
 
-<!-- Multiple Radios (inline) -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="salesman">Verkoper?</label>
-  <div class="col-md-4"> 
-    <label class="radio-inline" for="salesman1">
-      <input type="radio" name="salesman" id="salesmanyes" value="yes" checked="checked">
-      Ja
-    </label> 
-    <label class="radio-inline" for="salesman2">
-      <input type="radio" name="salesman" id="salesmanno" value="no">
-      Nee
-    </label>
-  </div>
-</div>
+	
+	
+	
+	<!-- Multiple Radios (inline) -->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="salesman">Verkoper?</label>
+	  <div class="col-md-4"> 
+		<label class="radio-inline" for="salesman1">
+		  <input type="radio" name="salesman" id="salesmanyes" value="yes" checked="checked">
+		  Ja
+		</label> 
+		<label class="radio-inline" for="salesman2">
+		  <input type="radio" name="salesman" id="salesmanno" value="no">
+		  Nee
+		</label>
+	  </div>
+	</div>
+	
+	
+	
 
-<!-- Button -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="register"></label>
-  <div class="col-md-4">
-    <button id="register" name="register" class="btn btn-primary">Registreren</button>
-  </div>
-</div>
+	<!-- Button -->
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="register"></label>
+	  <div class="col-md-4">
+		<button type="submit" id="register" name="register" class="btn btn-primary">Registreren</button>
+	  </div>
+	</div>
+	
+	
+	
+	
+	
 
-</fieldset>
+	</fieldset>
 </form>
 
 
@@ -255,13 +335,180 @@
     <script src="js/bootstrap.min.js"></script>
 
 	<!-- Bootstrap Select core js -->
-    <script src="js/bootstrap-datepicker.js"></script>
+    <!--<script src="js/bootstrap-datepicker.js"></script>-->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+	
+	<!-- Bootstrap validator -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script>
+	
 
-	<script>
-		$('#birthdate').datepicker({
-			format: 'dd/mm/yyyy',
-			weekStart: 1
+	<script>	
+	$(document).ready(function() {
+		var date = new Date();
+	
+		$('#birthDate').datepicker({
+			format: 'dd-mm-yyyy',
+			weekStart: 1,
+			autoclose: true,
+			endDate: "now"
+		}).on('changeDate', function (ev) {
+			$('#registrationForm').bootstrapValidator('revalidateField', 'birthDate');
+		});;
+		
+		//Passwoord blijven controleren
+		$('#password').on('changeDate', function(e) {
+				$('#registrationForm').bootstrapValidator('revalidateField', 'password');
 		});
+		
+		$('#registrationForm').bootstrapValidator({
+           feedbackIcons: {
+             valid: 'glyphicon glyphicon-ok',
+             invalid: 'glyphicon glyphicon-remove',
+             validating: 'glyphicon glyphicon-refresh'
+           },
+		   
+		   
+           fields: {
+			 firstname: {
+			   validators: {
+				 notEmpty: {
+				   message: 'Uw voornaam moet ingevuld zijn.'
+				 }
+			   }
+			 },
+			 
+			 lastname: {
+			   validators: {
+				 notEmpty: {
+				   message: 'Uw achternaam moet ingevuld zijn.'
+				 }
+			   }
+			 },
+			 
+			 email: {
+			   validators: {
+			   emailAddress: {
+					message: 'Dit veld moet een E-Mail adres zijn.'
+				},
+			   notEmpty: {
+				   message: 'Uw email moet ingevuld zijn.'
+				 }
+			   }
+			 },
+			 
+			 tel: {
+			   validators: {
+			   regexp: {
+                        regexp: /^[0-9_]+$/,
+                        message: 'Uw telefoonnummer mag alleen maar uit cijfers bestaan'
+			   },
+			   notEmpty: {
+				   message: 'Uw telefoonnummer moet ingevuld zijn.'
+			   },
+			   stringLength: {
+                        message: 'Uw telefoonnummer moet uit minimaal 6 cijfers bestaan',
+                        min: 6
+			   }
+			   }
+			 },
+			 
+			 country: {
+			   validators: {
+				 notEmpty: {
+				   message: 'Uw plaatsnaam moet ingevuld zijn.'
+				 }
+			   }
+			 },
+			 
+			 placename: {
+			   validators: {
+				 notEmpty: {
+				   message: 'Uw plaatsnaam moet ingevuld zijn.'
+				 }
+			   }
+			 },
+			 
+			 zipcode: {
+			   validators: {
+				 notEmpty: {
+				   message: 'Uw postcode moet ingevuld zijn.'
+				 }
+			   }
+			 },
+			 
+			 address1: {
+			   validators: {
+				 notEmpty: {
+				   message: 'Uw plaatsnaam moet ingevuld zijn.'
+				 }
+			   }
+			 },
+			 
+			 username: {
+			   validators: {
+				 notEmpty: {
+				   message: 'Uw gebruikersnaam moet ingevuld zijn.'
+				 }
+			   }
+			 },
+			 
+			 password: {
+				validators: {
+					stringLength: {
+                        message: 'Uw wachtwoord moet minimaal uit 6 karakters bestaan',
+                        min: 6
+                    },
+					notEmpty: {
+						message: 'Uw wachtwoord mag niet leeg zijn.'
+					}
+				}
+			},
+			
+			confirmpassword: {
+				validators: {
+					notEmpty: {
+						message: 'Uw wachtwoord mag niet leeg zijn.'
+					},
+					identical: {
+						field: 'password',
+						message: 'Uw wachtwoord moet identiek aan het bovenstaande veld zijn.'
+					}
+					
+				}
+			},
+			 
+			 
+		   
+			 birthDate: {
+			   validators: {
+				 excluded: false,
+				 notEmpty: {
+				   message: 'Uw geboortedatum moet ingevuld zijn.'
+				 },
+				 date: {
+				   format: 'DD-MM-YYYY',
+				   max: date.yyyymmdd(),
+				   message: 'Het formaat is dd-mm-yyyy, de datum mag niet na: ' + date.yyyymmdd()
+				 }
+			   }
+			 }
+           }
+         });
+
+		 
+		 
+	});
+	
+	
+	Date.prototype.yyyymmdd = function() {
+		var mm = this.getMonth() + 1; // getMonth() is zero-based
+		var dd = this.getDate();
+
+		return [(dd>9 ? '' : '0') + dd + '-',
+				(mm>9 ? '' : '0') + mm + '-',
+				this.getFullYear()
+				].join('');
+	};
 	</script>
 </body>
 
