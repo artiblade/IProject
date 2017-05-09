@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +23,8 @@
     <link href="css/main_style.css" rel="stylesheet">
 
     <!-- CSS van Bootstrap select-->
-    <link href="css/datepicker.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css" />-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -88,80 +90,116 @@
             <!-- /.container-fluid -->
         </nav>
 
-        <form class="form-horizontal">
+        <form class="form-horizontal" id=changedata>
             <fieldset>
 
                 <legend>Gegevens wijzigen</legend>
+
+                <div class="col-md-8">
                 <div class="form-group">
-                    <label for="inputUsername" class="col-md-4 control-label">Gebruikersnaam</label>
-                    <div class="col-md-4">
-                        <input type="text" id="inputUsername" class="form-control" placeholder="Username" required="" autofocus="">
+                    <label for="chfirstname" class="col-md-4 control-label">Voornaam</label>
+                    <div class="col-md-8">
+                        <input id="chfirstname" name="chfirstname" type="text" placeholder="Voornaam" class="form-control input-md">
                     </div>
                 </div>
 
+
                 <div class="form-group">
-                    <label for="inputFirstName" class="col-md-4 control-label">Voornaam</label>
-                    <div class="col-md-4">
-                        <input type="text" id="inputFirstName" class="form-control" placeholder="Voornaam" required="" autofocus="">
+                    <label for="chlastname" class="col-md-4 control-label">Achternaam</label>
+                    <div class="col-md-8">
+                        <input id="chlastname" name="chlastname" type="text" placeholder="Achternaam" class="form-control input-md">
                     </div>
                 </div>
+
+
                 <div class="form-group">
-                    <label for="inputLastName" class="col-md-4 control-label">Achternaam</label>
-                    <div class="col-md-4">
-                        <input type="text" id="inputLastName" class="form-control" placeholder="Achternaam" required="" autofocus="">
+                    <label for="chbirthDate" class="col-md-4 control-label">Geboortedatum</label>
+                    <div class="col-md-8">
+                        <input id="chbirthDate" name="chbirthDate" type="text" placeholder="Geboortedatum" class="form-control input-md">
                     </div>
                 </div>
+
+
                 <div class="form-group">
-                    <label for="birthDate" class="col-md-4 control-label">Geboortedatum</label>
-                    <div class="col-md-4">
-                        <input type="date" id="birthDate" class="form-control" required="">
+	                 <label class="col-md-4 control-label" for="chtel">Telefoonnummer</label>  
+	                 <div class="col-md-8">
+	                    <input id="chtel" name="chtel" type="tel" placeholder="Uw telefoonnummer" class="form-control input-md">
+		            </div>
+	            </div>
+
+
+                <div class="form-group">
+                    <label for="chaddress1" class="col-md-4 control-label">Adres 1</label>
+                    <div class="col-md-8">
+                        <input id="chaddress1" name="chaddress1" type="text" placeholder="Adres 1" class="form-control input-md">
                     </div>
                 </div>
+
+
                 <div class="form-group">
-                    <label for="inputEmail" class="col-md-4 control-label">E-mail adres</label>
-                    <div class="col-md-4">
-                        <button id="inputEmail" name="Email" class="btn btn-primary">E-mail wijzigen</button>
+                    <label for="chaddress2" class="col-md-4 control-label">Adres 2 <small>optioneel</small></label>
+                    <div class="col-md-8">
+                        <input id="chaddress2" name="chaddress2" type="text" placeholder="Adres 2" class="form-control input-md">
                     </div>
                 </div>
+
+
                 <div class="form-group">
-                    <label for="inputPassword" class="col-md-4 control-label">Wachtwoord</label>
-                    <div class="col-md-4">
-                        <button id="inputPassword" name="Password" class="btn btn-primary">Wachtwoord wijzigen</button>
+                    <label for="chzipcode" class="col-md-4 control-label">Postcode</label>
+                    <div class="col-md-8">
+                        <input id="chzipcode" name="chzipcode" type="text" placeholder="Postcode" class="form-control input-md">
                     </div>
                 </div>
+
+
                 <div class="form-group">
-                    <label for="inputAddress" class="col-md-4 control-label">Adres</label>
-                    <div class="col-md-4">
-                        <input type="text" id="inputAddress" class="form-control" placeholder="Adres" required="" autofocus="">
+                    <label for="chplacename" class="col-md-4 control-label">Plaatsnaam</label>
+                    <div class="col-md-8">
+                        <input id="chplacename" name="chplacename" type="text" placeholder="Plaatsnaam" class="form-control input-md">
                     </div>
                 </div>
+
+
+                	<div class="form-group">
+	  <label class="col-md-4 control-label" for="chcountry">Land</label>
+	  <div class="col-md-8">
+		<select id="chcountry" name="chcountry" class="form-control input-md">
+		  <option disabled selected value>Selecteer een optie</option>
+		  <option>Nederland</option>
+		  <option>België</option>
+		  <option>Luxemburg</option>
+		  <option>Duitsland</option>
+		</select>
+	  </div>
+	</div>
+                </div>
+
+
+                <div class="col-md-4">
                 <div class="form-group">
-                    <label for="inputAddress2" class="col-md-4 control-label">Adres 2 (optioneel)</label>
-                    <div class="col-md-4">
-                        <input type="text" id="inputAddress2" class="form-control" placeholder="Address 2" required="" autofocus="">
+                    <label for="chemail" class="col-md-4 control-label">E-mail adres</label>
+                    <div class="col-md-2">
+                        <button id="chemail" name="chemail" class="btn btn-primary">E-mail wijzigen</button>
                     </div>
                 </div>
+
+                
                 <div class="form-group">
-                    <label for="inputPostalCode" class="col-md-4 control-label">Postcode</label>
-                    <div class="col-md-4">
-                        <input type="text" id="inputPostalCode" class="form-control" placeholder="0000 aa" required="" autofocus="">
+                    <label for="chpassword" class="col-md-4 control-label">Wachtwoord</label>
+                    <div class="col-md-2">
+                        <button id="chpassword" name="chpassword" class="btn btn-primary">Wachtwoord wijzigen</button>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="inputPlaatsnaam" class="col-md-4 control-label">Plaatsnaam</label>
-                    <div class="col-md-4">
-                        <input type="text" id="inputPlaatsnaam" class="form-control" placeholder="Plaats" required="" autofocus="">
-                    </div>
                 </div>
+
+                	<!-- Button -->
                 <div class="form-group">
-                    <label for="inputLand" class="col-md-4 control-label">Land</label>
-                    <div class="col-md-4">
-                        <input type="Land" id="inputLand" class="form-control" placeholder="Nederland" required="" autofocus="">
-                    </div>
+                <label class="col-md-6 control-label" for="register"></label>
+                <div class="col-md-6">
+                    <button type="submit" id="register" name="register" class="btn btn-primary">Registreren</button>
                 </div>
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Gegevens wijzigen</button>
-                <div class="container">
-                    <hr>
+                </div>
+                    
                     <!-- Footer -->
                     <footer>
                         <div class="row">
@@ -178,6 +216,132 @@
 
                 <!-- Bootstrap Core JavaScript -->
                 <script src="js/bootstrap.min.js"></script>
+
+                <!-- Bootstrap Select core js -->
+                <!--<script src="js/bootstrap-datepicker.js"></script>-->
+                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+                
+                <!-- Bootstrap validator -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script>
+                
+
+                	<script>	
+	$(document).ready(function() {
+		var date = new Date();
+	
+		$('#chbirthDate').datepicker({
+			format: 'dd-mm-yyyy',
+			weekStart: 1,
+			autoclose: true,
+			endDate: "now"
+		}).on('changeDate', function (ev) {
+			$('#changedata').bootstrapValidator('revalidateField', 'chbirthDate');
+		});;
+		
+		$('#changedata').bootstrapValidator({
+           feedbackIcons: {
+             valid: 'glyphicon glyphicon-ok',
+             invalid: 'glyphicon glyphicon-remove',
+             validating: 'glyphicon glyphicon-refresh'
+           },
+		   
+		   
+           fields: {
+			 chfirstname: {
+			   validators: {
+				 notEmpty: {
+				   message: 'Uw voornaam moet ingevuld zijn.'
+				 }
+			   }
+			 },
+			 
+			 chlastname: {
+			   validators: {
+				 notEmpty: {
+				   message: 'Uw achternaam moet ingevuld zijn.'
+				 }
+			   }
+			 },
+			 
+			 chtel: {
+			   validators: {
+			   regexp: {
+                        regexp: /^[0-9_]+$/,
+                        message: 'Uw telefoonnummer mag alleen maar uit cijfers bestaan'
+			   },
+			   notEmpty: {
+				   message: 'Uw telefoonnummer moet ingevuld zijn.'
+			   },
+			   stringLength: {
+                        message: 'Uw telefoonnummer moet uit minimaal 6 cijfers bestaan',
+                        min: 6
+			   }
+			   }
+			 },
+			 
+			 chcountry: {
+			   validators: {
+				 notEmpty: {
+				   message: 'Uw plaatsnaam moet ingevuld zijn.'
+				 }
+			   }
+			 },
+			 
+			 chplacename: {
+			   validators: {
+				 notEmpty: {
+				   message: 'Uw plaatsnaam moet ingevuld zijn.'
+				 }
+			   }
+			 },
+			 
+			 chzipcode: {
+			   validators: {
+				 notEmpty: {
+				   message: 'Uw postcode moet ingevuld zijn.'
+				 }
+			   }
+			 },
+			 
+			 chaddress1: {
+			   validators: {
+				 notEmpty: {
+				   message: 'Uw plaatsnaam moet ingevuld zijn.'
+				 }
+			   }
+			 },
+		   
+			 chbirthDate: {
+			   validators: {
+				 excluded: false,
+				 notEmpty: {
+				   message: 'Uw geboortedatum moet ingevuld zijn.'
+				 },
+				 date: {
+				   format: 'DD-MM-YYYY',
+				   max: date.yyyymmdd(),
+				   message: 'Het formaat is dd-mm-yyyy, de datum mag niet na: ' + date.yyyymmdd()
+				 }
+			   }
+			 }
+           }
+         });
+
+		 
+		 
+	});
+	
+	
+	Date.prototype.yyyymmdd = function() {
+		var mm = this.getMonth() + 1; // getMonth() is zero-based
+		var dd = this.getDate();
+
+		return [(dd>9 ? '' : '0') + dd + '-',
+				(mm>9 ? '' : '0') + mm + '-',
+				this.getFullYear()
+				].join('');
+	};
+	</script>
 
 </body>
 
