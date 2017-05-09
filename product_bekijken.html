@@ -31,7 +31,7 @@
     <![endif]-->		<!-- jQuery/jQueryUI (hosted) -->
 </head>
 
-<body>
+<body data-spy = "scroll" data-target = ".jumbotron" data-offset = "50" >
     <!-- Page Content -->
     <div class="container">
 
@@ -98,14 +98,14 @@
         <div class="col-md-12 hidden-lg hidden-md">
             <div class = "jumbotron">
                 <button type = "button" class = "btn btn-primary btn-block">
-                    Contact met: Freekie
+                    Contact
                 </button>
-                <button type = "button" class = "btn btn-primary btn-block">
-                    Bekijk eerder gestelde vragen
-                </button>
-                <button type = "button" class = "btn btn-primary btn-block">
-                    Stel een vraag
-                </button>
+                <a href = "#bieden" type = "button" class = "btn btn-primary btn-block">
+                     Bieden
+                </a>
+                <a href = "#reactie" type = "button" class = "btn btn-primary btn-block">
+                    Reacties
+                </a>
             </div>
         </div>
         
@@ -149,6 +149,34 @@
                         <h3>"Hier komt de meegegeven informatie over het product." <br>
                             In Het geval van deze specifieke pagina zou er dus informatie komen over de motor afgebeeld. <br><br> </h3>
                     </div>
+                    <div class = "hidden-xs hidden-sm">
+                        <div class = "jumbotron">
+                            <button type = "button" class = "btn btn-primary btn-block" onclick="$('#target2').toggle();">
+                                Plaats een reactie
+                            </button>
+                        
+                            <button type = "button" class = "btn btn-primary btn-block" onclick="$('#target').toggle();">
+                                Bekijk reacties
+                            </button>
+                        
+                            <div id="target" style="display: none">
+                                <h3> Bram </h3>
+                                stop is met zo hoog bieden jongens! <br> Zoveel is dit ding helemaal niet waard!
+                                
+                                <h3> Bram </h3>
+                                Nevermind, ik heb mijn spaarpot op de kop getikt, heb wat centen kunnen vinden.
+                            </div>
+                            <div id = "target2" style = "display: none">
+                                <div class="form-group">
+                                    <label for="comment"><h3>Reactie: </h3></label>
+                                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                                </div>
+                                <div type = "button" class = "btn btn-primary btn-block">
+                                    Plaats reactie
+                                </div>
+                        </div>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -160,54 +188,49 @@
                             <button type = "button" class = "btn btn-primary btn-block">
                                 Contact met: Freekie
                             </button>
-                            <button type = "button" class = "btn btn-primary btn-block">
-                                Bekijk eerder gestelde vragen
-                            </button>
-                            <button type = "button" class = "btn btn-primary btn-block">
-                                Stel een vraag
-                            </button>
                         </div>
                     </div>
-                    
-                    <div class = "jumbotron">
-                        <h3> Biedingen </h3>
-                        <p> Laatste bod: &euro; 14000,00 </p>
-                        
-                            <button type = "button" class = "btn btn-primary btn-block">
-                                Plaats volgende bod!
-                            </button>
-                        
-                            <a type = "button" class = "btn btn-primary btn-block" href="#" data-toggle="modal" data-target="#login-modal">
-                                Plaats custom bod!
-                            </a>
+                    <div id = "bieden">
+                        <div class = "jumbotron">
+                            <label><h3> Biedingen </h3></label>
+                            <p> Laatste bod: &euro; 14000,00 </p>
 
-                        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-    	                   <div class="modal-dialog">
-				                <div class="loginmodal-container">
-                                    <form>
-                                        <div class="form-group">
-                                            <label for="usr">Bod:</label>
-                                            <input type="text" class="form-control" id="usr" placeholder="Typ hier je bod">
-                                            <button type = "button" class = "btn btn-primary btn-block">
-                                            Plaats bod!
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-			                 </div>
-		                </div>
-                        
-                        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-    	                   <div class="modal-dialog">
-				                <div class="loginmodal-container">
-                                    <form>
-                                        <div class="form-group">
-                                            <label for="usr">Uw bod is geplaatst!</label>
-                                        </div>
-                                    </form>
-                                </div>
-			                 </div>
-		                </div>
+                                <button type = "button" class = "btn btn-primary btn-block">
+                                    Plaats volgende bod!
+                                </button>
+
+                                <a type = "button" class = "btn btn-primary btn-block" href="#" data-toggle="modal" data-target="#login-modal">
+                                    Plaats bod naar keuze!
+                                </a>
+
+                            <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                               <div class="modal-dialog">
+                                    <div class="loginmodal-container">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="usr">Bod:</label>
+                                                <input type="text" class="form-control" id="usr" placeholder="Typ hier je bod">
+                                                <button type = "button" class = "btn btn-primary btn-block">
+                                                Plaats bod!
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                 </div>
+                            </div>
+
+                            <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                               <div class="modal-dialog">
+                                    <div class="loginmodal-container">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="usr">Uw bod is geplaatst!</label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
                     </div>
                     <div class = "jumbotron">
                         <div class = "row">
@@ -236,6 +259,34 @@
                                     <p>&euro; 100,00</p>
                                 </div>
                             
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id = "reactie">
+            <div class = "col-md-12 hidden-lg hidden-md">
+                <div class = "jumbotron">
+                    <button type = "button" class = "btn btn-primary btn-block" onclick="$('#target4').toggle();">
+                        Plaats een reactie
+                    </button>
+                    <button type = "button" class = "btn btn-primary btn-block" onclick="$('#target3').toggle();">
+                        Bekijk reacties
+                    </button>        
+                    <div id="target3" style="display: none">
+                        <h3> Bram </h3>
+                        stop is met zo hoog bieden jongens! <br> Zoveel is dit ding helemaal niet waard!
+
+                        <h3> Bram </h3>
+                        Nevermind, ik heb mijn spaarpot op de kop getikt, heb wat centen kunnen vinden.
+                    </div>
+                    <div id = "target4" style = "display: none">
+                        <div class="form-group">
+                            <label for="comment"><h3>Reactie: </h3></label>
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                        <div type = "button" class = "btn btn-primary btn-block">
+                            Plaats reactie
                         </div>
                     </div>
                 </div>
