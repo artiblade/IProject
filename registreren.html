@@ -22,7 +22,6 @@
     <link href="css/main_style.css" rel="stylesheet">
 
 	<!-- CSS van Bootstrap select-->
-	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css" />-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -400,13 +399,13 @@
 			   validators: {
 			   regexp: {
                         regexp: /^[0-9_]+$/,
-                        message: 'Uw telefoonnummer mag alleen maar uit cijfers bestaan'
+                        message: 'Uw telefoonnummer mag alleen maar uit cijfers bestaan.'
 			   },
 			   notEmpty: {
 				   message: 'Uw telefoonnummer moet ingevuld zijn.'
 			   },
 			   stringLength: {
-                        message: 'Uw telefoonnummer moet uit minimaal 6 cijfers bestaan',
+                        message: 'Uw telefoonnummer moet minimaal 6 cijfers bevatten.',
                         min: 6
 			   }
 			   }
@@ -432,6 +431,10 @@
 			   validators: {
 				 notEmpty: {
 				   message: 'Uw postcode moet ingevuld zijn.'
+				 },
+				 regexp: {
+					regexp: /^[1-9][0-9]{3} ?(?!sa|sd|ss)[a-z]{2}$/i,
+					message: 'Dit is geen geldige postcode (Formaat: 1234AB).'
 				 }
 			   }
 			 },
