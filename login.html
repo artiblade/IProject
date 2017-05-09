@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,224 +17,223 @@
 
     <!-- Custom CSS -->
     <link href="css/main_style.css" rel="stylesheet">
-	
-	<!-- Pop-up box (login, .....) -->
+
+    <!-- Pop-up box (login, .....) -->
     <link href="css/popup_box.css" rel="stylesheet">
-	
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 </head>
 
 <body>
 
-    
 
-    <!-- Page Content -->
-    <div class="container">
+<!-- Page Content -->
+<div class="container">
 
-	<!-- Navigation -->
+    <!-- Navigation -->
     <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">EenmaalAndermaal</a>
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">EenmaalAndermaal</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+                <ul class="nav navbar-nav">
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Zoek</button>
+                    </form>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+
+
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+             aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">
+                <div class="loginmodal-container">
+                    <h1>Inloggen</h1><br>
+                    <form>
+                        <input type="text" name="user" placeholder="E-mail">
+                        <input type="password" name="pass" placeholder="Wachtwoord">
+                        <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                    </form>
+
+                    <div class="login-help">
+                        <a href="#">Registeren</a> - <a href="#" data-target="#pwdModal" data-toggle="modal">Wachtwoord
+                        vergeten</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--modal-->
+        <div id="pwdModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h1 class="text-center">Wat is mijn wachtwoord?</h1>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-md-12">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="text-center">
+
+                                        <p>Vul uw e-mailadres in om uw wachtwoord te achterhalen!</p>
+                                        <div class="panel-body">
+                                            <fieldset>
+                                                <div class="form-group">
+                                                    <input class="form-control input-lg" placeholder="E-mailadres"
+                                                           name="email" type="email">
+                                                </div>
+                                                <input class="btn btn-lg btn-primary btn-block"
+                                                       value="Verstuur mijn wachtwoord!" type="submit">
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="col-md-12">
+                            <button class="btn" data-dismiss="modal" aria-hidden="true">Annuleren</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <div class="row">
+
+        <div class="col-md-3">
+            <p class="lead">Categorieën</p>
+            <div class="list-group">
+                <a href="#" class="list-group-item active">Auto's</a>
+                <a href="#" class="list-group-item">Tractors</a>
+                <a href="#" class="list-group-item">Electronica</a>
+                <a href="#" class="list-group-item">Fietsen</a>
+                <a href="#" class="list-group-item">Scooters</a>
+                <a href="#" class="list-group-item">Boten</a>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+            <p>asdf</p>
+        </div>
+
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-navbar-collapse">
-      <ul class="nav navbar-nav">
-        
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input  type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Zoek</button>
-      </form>
-	  <li><a href="#">Register</a></li>
-	  <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+</div>
+<!-- /.container -->
 
-
-						<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-								  <div class="modal-dialog">
-										<div class="loginmodal-container">
-											<h1>Inloggen</h1><br>
-										  <form method="post">
-											<input type="text" name="user" placeholder="E-mail">
-											<input type="password" name="pass" placeholder="Wachtwoord">
-											<input type="submit" name="login" class="login loginmodal-submit" value="Login">
-										  </form>
-											
-										  <div class="login-help">
-											<a href="#">Registeren</a> - <a href="#" data-target="#pwdModal" data-toggle="modal">Wachtwoord vergeten</a>
-										  </div>
-										</div>
-									</div>
-					    </div>
-		  
-													  
-													
-													
-													
-													
-													
-														<!--modal-->
-														<div id="pwdModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-														  <div class="modal-dialog">
-														  <div class="modal-content">
-															  <div class="modal-header">
-																  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-																  <h1 class="text-center">Wat is mijn wachtwoord?</h1>
-															  </div>
-															  <div class="modal-body">
-																  <div class="col-md-12">
-																		<div class="panel panel-default">
-																			<div class="panel-body">
-																				<div class="text-center">
-																				  
-																				  <p>Vul uw e-mailadres in om uw wachtwoord te achterhalen!</p>
-																					<div class="panel-body">
-																						<fieldset>
-																							<div class="form-group">
-																								<input class="form-control input-lg" placeholder="E-mailadres" name="email" type="email">
-																							</div>
-																							<input class="btn btn-lg btn-primary btn-block" value="Verstuur mijn wachtwoord!" type="submit">
-																						</fieldset>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-															  </div>
-															  <div class="modal-footer">
-																  <div class="col-md-12">
-																  <button class="btn" data-dismiss="modal" aria-hidden="true">Annuleren</button>
-																  </div>	
-															  </div>
-														  </div>
-														  </div>
-														</div>
-  
-  </nav>
-	
-	
+<div class="container">
+    <hr>
+    <!-- Footer -->
+    <footer>
         <div class="row">
-
-            <div class="col-md-3">
-                <p class="lead">Categorieën</p>
-                <div class="list-group">
-                    <a href="#" class="list-group-item active">Auto's</a>
-                    <a href="#" class="list-group-item">Tractors</a>
-                    <a href="#" class="list-group-item">Electronica</a>
-                    <a href="#" class="list-group-item">Fietsen</a>
-                    <a href="#" class="list-group-item">Scooters</a>
-                    <a href="#" class="list-group-item">Boten</a>
-                </div>
+            <div class="col-lg-12">
+                <p>Copyright &copy; Your Website 2014</p>
             </div>
-
-            <div class="col-md-9">
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-			<p>asdf</p>
-            </div>
-
         </div>
+    </footer>
 
-    </div>
-    <!-- /.container -->
+</div>
+<!-- /.container -->
 
-    <div class="container">
-        <hr>
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-        </footer>
+<!-- jQuery -->
+<script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
 
-    </div>
-    <!-- /.container -->
-
-    <!-- jQuery -->
-    <script
-		src="https://code.jquery.com/jquery-3.2.1.js"
-		integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-		crossorigin="anonymous"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
 
 </body>
 
-</html>
+</html
